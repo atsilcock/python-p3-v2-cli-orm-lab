@@ -68,7 +68,10 @@ def delete_department():
 # You'll implement the employee functions in the lab
 
 def list_employees():
-    pass
+    employees = Employee.get_all()  # Retrieve all employees from the database
+    for employee in employees:  
+        breakpoint()    # Iterate through the employees list
+        print(employee) 
 
 
 def find_employee_by_name():
